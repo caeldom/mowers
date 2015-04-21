@@ -12,6 +12,13 @@ public class Root {
         Scanner in = new Scanner(System.in);                // input
         int count = 0;                                      // holds max number of steps
 
+        System.out.println("PART 1 : LAWN MOWING\n\n" +
+                "1 - grid dimensions: {x y} eg. '5 5' <press enter>\n" +
+                "2 - create a mower: {x y direction[N,E,S,W]} eg. '1 2 N' <press enter>\n" +
+                "3 - instructions for mower: M - move, L - rotate left, R - rotate right\n" +
+                "      eg. 'LMLMLMLMM' <press enter>\n" +
+                "4 - repeat steps 2 & 3 for each additional mower, then press enter to run.\n\n" +
+                "Input:");
         String input = in.nextLine();                       // input the grid dimensions
         String[] split = input.split(" ");
         int gridx = Integer.parseInt(split[0]);             // store grid xbound
